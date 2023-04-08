@@ -1,14 +1,158 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-.main {
-    height: 100vh;
-    background-color: #005A7C;
+@keyframes jump {
+  0% {
+    transform: translate(0, 0);
+    opacity: 100%;
+  }
+
+  50% {
+    transform: translate(0, -10px);
+    opacity: 0%;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    opacity: 100%;
+  }
 }
 
-.main--img {
-    height: 100%;
-    position: absolute;
-    right: 0;
+*,
+*::after,
+*::before, h1, p {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header__wraper {
+  background-color: #005A7C;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  position: relative;
+}
+
+.header__wraper::after {
+  content: 'МОЛОДЕЖЬ';
+  position: absolute;
+  font-weight: 700;
+  font-size: 242px;
+  line-height: 323px;
+  color: rgba(0, 0, 0, 0.13);
+  top: 320px;
+  left: -15px;
+  z-index: 5;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 35px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.header__nav {
+  margin-left: auto;
+  width: 50%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25px;
+  right: 0;
+}
+
+.header__btn {
+  max-height: 30px;
+}
+
+.header__menu {
+  width: 1200px;
+  min-height: 65px;
+  background: rgba(1, 63, 86, 0.5);
+  margin-top: 24px;
+}
+
+
+.header__menu-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 18px 65px;
+}
+
+.header__menu-item {
+  display: block;
+}
+
+.header__menu-link {
+  display: block;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all .5s;
+}
+
+.header__menu-link_active {
+  color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.header__menu-link:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.header__decor {
+  position: absolute;
+  top: 250px;
+  left: 240px;
+  z-index: 6;
+}
+
+.header__content {
+  position: absolute;
+  top: 430px;
+  z-index: 7;
+}
+
+.header__title {
+  display: block;
+  font-weight: 700;
+  font-size: 130px;
+  line-height: 1.5;
+  color: #fff;
+  
+}
+
+.header__subtitle {
+  display: block;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 180px;
+  line-height: 125px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.scroll__btn {
+  animation-name: jump;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  margin: 650px 40px 30px;
+  display: block;
 }
