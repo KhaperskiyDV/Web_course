@@ -364,6 +364,14 @@ p {
 
 }
 
+.social {
+  transition: all .5s;
+}
+
+.social:hover {
+  opacity: 50%;
+}
+
 .agbo-link, .umpis-link{
   display: block;
   font-weight: 700;
