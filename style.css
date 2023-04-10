@@ -74,19 +74,19 @@ p {
   position: relative;
 }
 
-.header__wraper::after {
-  /* animation-name: fade; */
+.header__decor-text {
+  animation-name: fade;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
-  content: 'МОЛОДЕЖЬ';
+  /* content: 'МОЛОДЕЖЬ'; */
   position: absolute;
   font-weight: 700;
   font-size: 232px;
   line-height: 323px;
   color: rgba(0, 0, 0, 0.13);
-  top: 320px;
-  left: -15px;
+  top: 360px;
+  left: -350px;
   z-index: 5;
 }
 
@@ -176,7 +176,7 @@ p {
 }
 
 .header__title {
-  /* animation-name: fade2; */
+  animation-name: fade2;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
@@ -189,7 +189,7 @@ p {
 }
 
 .header__subtitle {
-  /* animation-name: fade1; */
+  animation-name: fade1;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
