@@ -94,6 +94,12 @@ p {
   max-width: 1220px;
   padding: 0 10px;
   margin: 0 auto;
+  /* border: 2px solid #000; */
+
+}
+
+.header__container {
+  height: 100vh;
 }
 
 .header {
@@ -236,20 +242,23 @@ p {
 }
 
 .footer {
+  font-family: 'Heebo', sans-serif;
   padding-top: 45px;
   flex-wrap: wrap;
   background-color: #005A7C;
-  height: 520px;
+  height: 540px;
 }
 
-.footer__container{
+.footer__container {
   display: flex;
   flex-wrap: wrap;
 }
+
 .footer__menu {
+  font-family: 'Heebo', sans-serif;
   display: flex;
   width: 50%;
-
+  margin-bottom: 20px;
 }
 
 .footer__menu-info {
@@ -261,8 +270,6 @@ p {
 }
 
 .footer__menu-title {
-  /* font-family: 'Heebo', sans-serif; */
-  /* font-style: normal; */
   font-weight: 700;
   font-size: 24px;
   line-height: 35px;
@@ -274,7 +281,7 @@ p {
   list-style: none;
 }
 
-.footer__menu-item{
+.footer__menu-item {
   margin-bottom: 15px;
 }
 
@@ -288,20 +295,89 @@ p {
 
 .footer__contacts {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 75px;
+}
+
+.footer__contacts-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer_contacts-addr {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: right;
+  max-width: 500px;
+  color: #fff;
+  margin-bottom: 35px;
 }
 
 
+.footer__contacts-email,
+.footer__contacts-tel {
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 44px;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
+  transition: all .5s;
+}
+
+.footer__contacts-email:hover,
+.footer__contacts-tel:hover {
+  color: #fff;
+}
 
 
+.footer__contacts-btns {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
 
+.write__us-btn {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+  color: #005A7C;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 12px 43px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  transition: all .5s;
+}
 
+.write__us-btn:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #005A7C;
 
+}
 
+.agbo-link, .umpis-link{
+  display: block;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: all .5s;
+}
 
-
-
-
-
+.agbo-link:hover, .umpis-link:hover{
+  color: #fff;
+}
 
 /* ----------Copyright----------------- */
 .copyright {
@@ -317,4 +393,5 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+
 }
