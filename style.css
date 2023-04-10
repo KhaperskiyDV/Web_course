@@ -224,8 +224,8 @@ body {
 .events {
   /* height: 100vh; */
   background-color: #DFE5E8;
-  background-repeat: no-repeat;
-  background-position: center center;
+  background-repeat: repeat-y;
+  background-position: center top;
 }
 
 .events__inner {
