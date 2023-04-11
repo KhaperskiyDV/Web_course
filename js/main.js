@@ -4,7 +4,7 @@ const swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
     autoplay: {
-        delay: 10000,
+        delay: 100000,
         disableOnInteraction: true,
       },
   });
