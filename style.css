@@ -215,7 +215,7 @@ body {
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  margin: 650px 40px 30px;
+  margin: 80% 40px 30px;
   display: block;
 }
 
@@ -224,8 +224,8 @@ body {
 .events {
   /* height: 100vh; */
   background-color: #DFE5E8;
-  background-repeat: repeat-y;
-  background-position: center top;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .events__inner {
@@ -292,11 +292,12 @@ body {
   margin-bottom: 30px;
 }
 
-.events__cards-date, .events__cards-place {
+.events__cards-date,
+.events__cards-place {
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
-} 
+}
 
 .events__cards-btn {
   margin-top: auto;
@@ -309,13 +310,76 @@ body {
   border: 1px solid #005A7C;
   max-width: 166px;
   height: 50px;
-  border-radius: 30px ;
+  border-radius: 30px;
 }
 
-.slider {
-  height: 100px;
-  background-color: #e9e9cf;
+/* -----------Slider--------------------- */
+
+.swiper-slide {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
 }
+
+.slider_inner {
+  height: 100vh;
+  padding: 110px 0;
+  display: flex;
+}
+
+.slider__title {
+  display: block;
+  font-weight: 700;
+  font-size: 120px;
+  /* line-height: 176px; */
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.swiper-button-next {
+  background-image: url("images/arrow-right.svg");
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  top: 90%;
+  right: 20%;
+  /* transform: translate(-1000px, 300px); */
+
+}
+
+.swiper-button-prev {
+  background-image: url("images/arrow-left.svg");
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  top: 90%;
+  left: 70%;
+  /* transform: translate(1000px, 300px); */
+
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .work {
   height: 100px;

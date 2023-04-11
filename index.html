@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -67,68 +68,89 @@
             </div>
         </div>
         <div class="events" id="events" style="background-image: url(images/Decor2.svg);">
-           <div class="container">
-            <div class="events__inner">
-                <div class="events__decor-text">СОБЫТИЯ</div>
-                <h2 class="events__title">СОБЫТИЯ</h2>
-                <div class="events__cards">
-                    <ul class="events__cards-list">
-                        <li class="events__cards-item" style="background-image: url(images/family.png);">
-                            <h5 class="events__cards-title">
-                                МОЛОДАЯ СЕМЬЯ БЕЛОВО - 2023
-                            </h5>
-                            <p class="events__cards-date">28.04.2023</p>
-                            <p class="events__cards-place">ДОЛ “Алые паруса”</p>
-                            <a class="events__cards-btn" href="#" >Подробнее</a>
-                        </li>
-                        <li class="events__cards-item" style="background-image: url(images/studvesna.png);">
-                            <h5 class="events__cards-title">
-                                СТУДВЕСНА - 2023
-                            </h5>
-                            <p class="events__cards-date">07.04.2023 </p>
-                            <p class="events__cards-place">ЦДК Белово</p>
-                            <a class="events__cards-btn" href="#" >Подробнее</a>
-                        </li>
-                        <li class="events__cards-item" style="background-image: url(images/studvesna.png);">
-                            <h5 class="events__cards-title">
-                                СТУДВЕСНА - 2023
-                            </h5>
-                            <p class="events__cards-date">07.04.2023 </p>
-                            <p class="events__cards-place">ЦДК Белово</p>
-                            <a class="events__cards-btn" href="#" >Подробнее</a>
-                        </li>
-                        <li class="events__cards-item" style="background-image: url(images/family.png);">
-                            <h5 class="events__cards-title">
-                                МОЛОДАЯ СЕМЬЯ БЕЛОВО - 2023
-                            </h5>
-                            <p class="events__cards-date">28.04.2023</p>
-                            <p class="events__cards-place">ДОЛ “Алые паруса”</p>
-                            <a class="events__cards-btn" href="#" >Подробнее</a>
-                        </li>
-                        <li class="events__cards-item" style="background-image: url(images/family.png);">
-                            <h5 class="events__cards-title">
-                                МОЛОДАЯ СЕМЬЯ БЕЛОВО - 2023
-                            </h5>
-                            <p class="events__cards-date">28.04.2023</p>
-                            <p class="events__cards-place">ДОЛ “Алые паруса”</p>
-                            <a class="events__cards-btn" href="#" >Подробнее</a>
-                        </li>
-                        <li class="events__cards-item" style="background-image: url(images/studvesna.png);">
-                            <h5 class="events__cards-title">
-                                СТУДВЕСНА - 2023
-                            </h5>
-                            <p class="events__cards-date">07.04.2023 </p>
-                            <p class="events__cards-place">ЦДК Белово</p>
-                            <a class="events__cards-btn" href="#" >Подробнее</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="container">
+                <div class="events__inner">
+                    <div class="events__decor-text">СОБЫТИЯ</div>
+                    <h2 class="events__title">СОБЫТИЯ</h2>
+                    <div class="events__cards">
+                        <ul class="events__cards-list">
+                            <li class="events__cards-item" style="background-image: url(images/family.png);">
+                                <h5 class="events__cards-title">
+                                    МОЛОДАЯ СЕМЬЯ БЕЛОВО - 2023
+                                </h5>
+                                <p class="events__cards-date">28.04.2023</p>
+                                <p class="events__cards-place">ДОЛ “Алые паруса”</p>
+                                <a class="events__cards-btn" href="#">Подробнее</a>
+                            </li>
+                            <li class="events__cards-item" style="background-image: url(images/studvesna.png);">
+                                <h5 class="events__cards-title">
+                                    СТУДВЕСНА - 2023
+                                </h5>
+                                <p class="events__cards-date">07.04.2023 </p>
+                                <p class="events__cards-place">ЦДК Белово</p>
+                                <a class="events__cards-btn" href="#">Подробнее</a>
+                            </li>
+                            <li class="events__cards-item" style="background-image: url(images/studvesna.png);">
+                                <h5 class="events__cards-title">
+                                    СТУДВЕСНА - 2023
+                                </h5>
+                                <p class="events__cards-date">07.04.2023 </p>
+                                <p class="events__cards-place">ЦДК Белово</p>
+                                <a class="events__cards-btn" href="#">Подробнее</a>
+                            </li>
+                            <li class="events__cards-item" style="background-image: url(images/family.png);">
+                                <h5 class="events__cards-title">
+                                    МОЛОДАЯ СЕМЬЯ БЕЛОВО - 2023
+                                </h5>
+                                <p class="events__cards-date">28.04.2023</p>
+                                <p class="events__cards-place">ДОЛ “Алые паруса”</p>
+                                <a class="events__cards-btn" href="#">Подробнее</a>
+                            </li>
+                        </ul>
+                    </div>
 
+                </div>
             </div>
-           </div>
         </div>
         <div class="slider">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url(images/Slide1.jpg);">
+                        <div class="container">
+                            <div class="slider_inner">
+                                <a class="slider__title" href="#">
+                                    ПРОЕКТЫ
+                                </a>
+                            </div>
+                        </div>
 
+                    </div>
+                    <div class="swiper-slide" style="background-image: url(images/Slide2.jpg);">
+                        <div class="container">
+                            <div class="slider_inner">
+                                <a class="slider__title" href="#">
+                                    КОМАНДА
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide" style="background-image: url(images/Slide3.jpg);">
+                        <div class="container">
+                            <div class="slider_inner">
+                                <a class="slider__title" href="#">
+                                    СООБЩЕСТВА
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="btns">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
         </div>
         <div class="work">
 
@@ -202,8 +224,8 @@
                         </div>
                     </div>
                     <div class="footer_adm-links">
-                        <a class="agbo-link" href="#" >Администрация Беловского городского округа</a>
-                        <a class="umpis-link" href="#" >Управление молодежной политики и спорта</a>
+                        <a class="agbo-link" href="#">Администрация Беловского городского округа</a>
+                        <a class="umpis-link" href="#">Управление молодежной политики и спорта</a>
                     </div>
                 </div>
             </div>
@@ -215,6 +237,8 @@
         </div>
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
