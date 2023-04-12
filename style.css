@@ -162,7 +162,7 @@ body {
 
 .header__menu-link_active {
   color: rgba(255, 255, 255, 0.7);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
 }
 
 .header__menu-link:hover {
@@ -280,7 +280,6 @@ body {
   flex-direction: column;
   transition: transform 0.5s;
   opacity: 80%;
-
 }
 
 .events__cards-item:hover {
@@ -417,7 +416,6 @@ body {
   transition: transform 0.5s;
   opacity: 80%;
   position: relative;
-
 }
 
 .events__cards-item:hover {
@@ -448,7 +446,7 @@ body {
   border: 2px solid #005A7C;
   width: 230px;
   height: 68px;
-  border-radius: 30px;
+  border-radius: 34px;
   transition: all 0.5s;
   position: absolute;
   text-align: center;
@@ -642,5 +640,4 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-
 }
