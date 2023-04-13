@@ -644,3 +644,29 @@ body {
 }
 
 /* ----------Template----------------- */
+.header__wraper-temp {
+  background-color: #013F56;
+}
+
+.header-temp {
+  padding: 35px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+}
+
+.header__menu-temp{
+  width: 1200px;
+  min-height: 65px;
+  background: rgba(255, 255, 255, 0.09);
+  margin-top: 24px;
+}
+
+.reg__content {
+  height: 70vh;
+  width: 100%;
+  background-color: #1F6288;
+  background-repeat: no-repeat;
+    background-position: top center;
+}
