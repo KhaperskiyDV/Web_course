@@ -670,6 +670,8 @@ body {
   margin-top: 24px;
 }
 
+/* ----------regist.html----------------- */
+
 .reg__content {
   height: 80vh;
   width: 100%;
@@ -732,6 +734,7 @@ body {
   background-color: #005A7C;
 }
 
+/* ----------auth.html----------------- */
 .auth__content {
   height: 60vh;
   width: 100%;
@@ -740,6 +743,7 @@ body {
   background-position: center center;
 }
 
+/* ----------send.html----------------- */
 .send__content {
   min-height: 80vh;
   width: 100%;
@@ -790,3 +794,86 @@ body {
   color: #fff;
   background-color: #005A7C;
 }
+
+/* ----------events.html----------------- */
+.eventpage__content,
+.about__content {
+  min-height: 80vh;
+  width: 100%;
+  background-color: #1F6288;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 60px;
+}
+
+.eventpage__cards-list,
+.about__cards-list {
+  list-style: none;
+}
+
+.eventpage__cards-item,
+.about__cards-item {
+  background-color: #fff;
+  box-shadow: 22px 24px 36px -12px rgba(0, 90, 124, 0.29);
+  border-radius: 50px;
+  border: 2px dashed #005A7C;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  font-size: 24px;
+  justify-content: space-between;
+
+}
+
+.eventpage__cards-title,
+.about__cards-title {
+  margin-bottom: 20px;
+}
+
+.eventpage__cards-place,
+.about__manager {
+  margin-bottom: 60px;
+}
+
+.eventpage__cards-text,
+.about__cards-text {
+  max-width: 650px;
+  margin-right: 40px;
+}
+
+.about__manager {
+  color: #005A7C;
+  font-weight: 700;
+
+
+}
+.about__cards-img {
+  max-width: 355px;
+  border-radius: 10px;
+}
+
+.about__contacts-tel {
+  width: 100%;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+  text-align: right;
+  color: #005A7C;
+  margin-top: 60px;
+  transition: all .5s;
+}
+
+.map {
+	width: 100%;
+	height: 500px;
+	background-color: #333;
+  margin-bottom: 60px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+/* [class*="copyrights-pane"] {
+	display: none !important;
+} */
